@@ -1,3 +1,3 @@
 # LPII-clase2
 
-cambiando el archivo README por primera vez 
+cambiando el archivo README por segunda vez 
