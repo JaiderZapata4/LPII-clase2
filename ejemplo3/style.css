@@ -3,7 +3,7 @@
 
 body {
     display: flex;
-    border: 2px solid red;
+    
     height: 100vh;
     width: 100vw;
     justify-content: center;
@@ -11,6 +11,7 @@ body {
 }
 
 .contenedor-principal {
+    position: relative;
     display: flex;
     border: 2px solid black;
     width: 35%;
@@ -18,6 +19,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 2rem;
+}
+
+.contenedor-principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 45%;
+    background-color: rgb(10, 190, 151);
+    border-radius: 2rem 2rem 0 0;
+
+
 }
 
 .image-perfil {
@@ -26,10 +40,36 @@ body {
 }
 
 .contenedor-imagen {
-    border: 5px solid blue;
+    position: relative;
+    border: 5px solid rgb(10, 190, 151);
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
     overflow: hidden;
 }
+
+.contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    height: 5rem;
+    border: 2px solid green;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-botones a {
+    display: inline-block;
+    width: 5rem;
+    height: 80%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.link img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 
